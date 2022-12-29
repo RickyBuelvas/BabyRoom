@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Baloo 2', 'cursive';
+    font-size: 62.5%;
+}
+body{
+    background-color: #faf8f7;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 320px;
+    height: auto;
+    padding: 10px 20px;
+    background: linear-gradient(45deg,#f386d2,#ae368b);
+}
+header .logo{
+    width: 85px;
+    height: auto;
+}
+header .logo img{
+    width: 90%;
+}
+nav{
+    width: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_checkbox{
+    display: none;
+}
+.nav_items{
+    width: 100%;
+    position: fixed;
+    top: 76px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    background-color: #faf8f7;
+    flex-direction: column;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path .3s ease-in-out;
+}
+.nav_items a{
+    text-decoration: none;
+    color: #808080;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 1px solid #d8d8d8;
+}
+.nav_carrito img{
+    cursor: pointer;    
+}
+.nav_img_hamburguesa{
+    cursor: pointer;
+}
+.nav_checkbox:checked + .nav_items{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+main{
+    margin-top: 76px;
+}
+.Introduccion{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+}
+.Introduccion .texto_introduccion{
+    padding: 40px 20px;
+    text-align: center;
+}
+.texto_introduccion h2{
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Dancing Script', 'cursive';
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.texto_introduccion h1{
+    font-size: 3rem;
+    line-height: 3.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #201E1C;
+}
+.texto_introduccion h1 span{
+    color: #ae368b;
+}
+.texto_introduccion p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 35px;
+    color: #757575;
+}
+.Introduccion .img_bg{
+    width: 100%;
+    height: 150px;
+    background-image: url(./img/img_bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.boton_introduccion{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+}
+.Introduccion a{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #faf8f7;
+    padding: 15px;
+    background-color: #f386d2;
+    border-radius: 40px;
+    text-decoration: none;
+}
